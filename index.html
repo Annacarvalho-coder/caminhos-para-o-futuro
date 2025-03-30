@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapa Paperine - Grêmio Estudantil</title>
+    <style>
+        :root {
+            --primary-color: #ce5b04;
+            --secondary-color: #f39b17;
+            --accent-color: #ffff;
+            --light-color: #b99e82;
+            --dark-color: rgb(234, 170, 50);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .slogan {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .number {
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        
+        .proposals {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .proposal-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .proposal-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .team-member {
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+        }
+        
+        .position {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .name {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            .proposals, .team {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">PAPERINE</div>
+        <div class="slogan">PARA UM FUTURO BRILLHANTE, VIVA UM PRESENTE DE REALIZAÇÕES</div>
+        <div class="number">09</div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#propostas">Nossas Propostas</a></li>
+            <li><a href="#equipe">Nossa Equipe</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <section id="propostas">
+        <h2>Nossas Propostas para o Grêmio</h2>
+        <div class="proposals">
+            <div class="proposal-card">
+                <h3>Visibilidade da Etec Jandira</h3>
+                <p>Parceria com a prefeitura para divulgar nossa escola e aumentar a procura pelos cursos oferecidos.</p>
+            </div>
+            
+            <div class="proposal-card">
+                <h3>Biblioteca Atualizada</h3>
+                <p>Organização e aumento do catálogo de livros através de doações e feiras de leitura.</p>
+            </div>
+            
+            <div class="proposal-card">
+                <h3>Infraestrutura</h3>
+                <p>Manutenção na quadra e melhorias nos espaços escolares.</p>
+            </div>
+            
+            <div class="proposal-card">
+                <h3>Suporte aos Alunos</h3>
+                <p>Ajuda nutricional e psicológica através de parcerias com profissionais.</p>
+            </div>
+            
+            <div class="proposal-card">
+                <h3>Esportes</h3>
+                <p>Mais modalidades esportivas e organização de campeonatos no complexo esportivo do Tablado.</p>
+            </div>
+            
+            <div class="proposal-card">
+                <h3>Passeios Culturais</h3>
+                <p>Organização de passeios escolares para lugares como Hopi Hari e outros pontos culturais.</p>
+            </div>
+            
+            <div class="proposal-card">
+                <h3>Brechó Comunitário</h3>
+                <p>Organização de um brechó para arrecadar fundos para a escola e comunidade.</p>
+            </div>
+            
+            <div class="proposal-card">
+                <h3>Comunicação</h3>
+                <p>Mural para avisos acadêmicos e atualizações diárias para manter todos informados.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="equipe">
+        <h2>Nossa Equipe</h2>
+        <div class="team">
+            <div class="team-member">
+                <div class="position">PRESIDENTE</div>
+                <div class="name">Sol</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">VICE-PRESIDENTE</div>
+                <div class="name">Luanny</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">SECRETÁRIO</div>
+                <div class="name">Isaac Victor</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">SUPLENTE</div>
+                <div class="name">Kauanny Victoria</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">TESOUREIRA</div>
+                <div class="name">Luiza</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">SUPLENTE</div>
+                <div class="name">Anna Luiza</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">DIRETOR DE COMUNICAÇÃO</div>
+                <div class="name">Giovanna</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">SUPLENTE</div>
+                <div class="name">Maria Eduarda</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">DIRETOR CULTURAL</div>
+                <div class="name"></div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">SUPLENTE</div>
+                <div class="name">Maria Luiza</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">DIRETOR DE ESPORTES</div>
+                <div class="name">Ryan</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">SUPLENTE</div>
+                <div class="name">Maria Eduarda</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">DIRETOR DE RELAÇÕES ACADÊMICAS</div>
+                <div class="name">Isadora</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">SUPLENTE</div>
+                <div class="name">Ana Clara</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">DIRETOR SOCIAL</div>
+                <div class="name">Lorena</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="position">SUPLENTE</div>
+                <div class="name">Laura</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para saber mais sobre nossas propostas ou para tirar dúvidas.</p>
+        <p>Nos siga nas redes sociais:</p>
+        <div class="social-links">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Facebook">👍</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Caminhos para o futuro - Número 09</p>
+        <p>Grêmio Estudantil - Etec Jandira</p>
+        <p>2025</p>
+    </footer>
+</body>
+</html>
